@@ -506,6 +506,18 @@ img {
   .contact__container {
     justify-items: center;
   }
+  .but{
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #4AD489;
+  }
+  .but:hover{
+    background: #4AD489;
+    color: #fff;
+    transition: 0.5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
