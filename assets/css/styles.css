@@ -399,7 +399,8 @@ img {
 }
 /*===== CERTIFICATES=====*/
 .certificate{
-  border-style: solid;
+
+  border:3px dashed rgb(0, 110, 255);
   border-radius: 10px;
   border-color: white;
   margin-left:40px;
