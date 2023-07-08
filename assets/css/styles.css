@@ -590,3 +590,6 @@ img {
     width: 450px;
   }
 }
+.dynamic-text-color {
+  color: rgb(148, 8, 242);
+}
