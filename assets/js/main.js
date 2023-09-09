@@ -42,6 +42,29 @@ function clearLetters() {
 }
 
 printLetters(phrases[pharseIndex])
+/*=====Dark Theme=====*/
+document.getElementById('darkModeToggle').addEventListener('click', function() {
+    const body = document.body;
+    const darkModeIcon = document.getElementById('darkModeIcon');
+    body.classList.toggle('dark-mode');
+    if (body.classList.contains('dark-mode')) {
+        darkModeIcon.src = "./assets/img/brightness_5_FILL0_wght400_GRAD0_opsz24.png"
+    } else {
+        darkModeIcon.src = "./assets/img/dark_mode_FILL0_wght400_GRAD0_opsz24.png"
+    }
+});
+
+/*=====Form Data=====*/
+			const scriptURL = ''
+			const form = document.forms['formName']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location.reload(); })
+				.catch(error => console.error('Error!', error.message))
+			})
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),

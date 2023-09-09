@@ -25,6 +25,18 @@
   --z-back: -10;
   --z-fixed: 100;
 }
+body.dark-mode {
+  background-color:#020629;
+  color: #f9f9f9;
+}
+body.dark-mode .nav__link {
+  color: #070000;
+}
+body.nav__link {
+  height: 75px;
+  position: absolute;
+
+}
 
 @media screen and (min-width: 968px) {
   :root {
@@ -457,7 +469,18 @@ img {
 .footer__copy {
   font-size: var(--smaller-font-size);
 }
+body.dark-mode {
+  background-color:#020629;
+  color: #f9f9f9;
+}
+body.dark-mode .nav__link {
+  color: #070000;
+}
+body.nav__link {
+  height: 75px;
+  position: absolute;
 
+}
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
   .home {
@@ -520,6 +543,18 @@ img {
     color: #fff;
     transition: 0.5rem;
   }
+  body.dark-mode {
+    background-color:#020629;
+    color: #f9f9f9;
+  }
+  body.dark-mode .nav__link {
+    color: #070000;
+  }
+  body.nav__link {
+    height: 75px;
+    position: absolute;
+  
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -577,6 +612,18 @@ img {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
   }
+  body.dark-mode {
+    background-color:#020629;
+    color: #f9f9f9;
+  }
+  body.dark-mode .nav__link {
+    color: #070000;
+  }
+  body.nav__link {
+    height: 75px;
+    position: absolute;
+  
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -589,6 +636,18 @@ img {
   }
   .home__img {
     width: 450px;
+  }
+  body.dark-mode {
+    background-color:#020629;
+    color: #f9f9f9;
+  }
+  body.dark-mode .nav__link {
+    color: #070000;
+  }
+  body.nav__link {
+    height: 75px;
+    position: absolute;
+  
   }
 }
 .dynamic-text-color {

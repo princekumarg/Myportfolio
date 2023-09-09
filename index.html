@@ -28,6 +28,11 @@
                         <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="#Certificate" class="nav__link">Certificate</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item">
+                            <button id="darkModeToggle" class="nav__link">
+                                <img id="darkModeIcon" href="./assets/img/dark_mode_FILL0_wght400_GRAD0_opsz24.png">
+                            </button>
+                        </li>
                     </ul>
                 </div>
 
@@ -46,9 +51,9 @@
                 </div>
 
                 <div class="home__social">
-                    <a href="https://www.linkedin.com/in/prince-kumar-546b28237" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://discord.com/channels/@me/prince_agrawal#8534" class="home__social-icon"><i class='bx bxl-discord' ></i></a>
-                    <a href="https://github.com/princekumarg" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/prince-kumar-546b28237" class="home__social-icon"><i style="color: purple;" class='bx bxl-linkedin'></i></a>
+                    <a href="https://discord.com/channels/@me/prince_agrawal#8534" class="home__social-icon"><i style="color: purple;" class='bx bxl-discord' ></i></a>
+                    <a href="https://github.com/princekumarg" class="home__social-icon"><i style="color: purple;"class='bx bxl-github' ></i></a>
                 </div>
                 <div class="home__data">
                     <a href="#" class="button">Coding&competion</a>
@@ -63,7 +68,7 @@
                     <a href="#" class="button">MyCV</a>
                 </div>
                 <div class="home__social">
-                    <a href="./assets/Mycv/Prince_kumar.pdf"><i class='bx bx-spreadsheet'></i></a>
+                    <a href="./assets/Mycv/Prince_kumar.pdf"><i style="font-size:30px;" class='bx bx-spreadsheet'></i></a>
                 </div>
 
                 <div class="home__img">
@@ -422,12 +427,13 @@
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Contact" class="contact__button button">
+                    <form action="mailto:agarwal8789@gmail.com" method="POST" enctype="text/plain" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input" name="your_name">
+                        <input type="mail" placeholder="Email" class="contact__input" name="your_email">
+                        <textarea  cols="0" placeholder="Address" rows="10" class="contact__input" name="messages"></textarea>
+                        <input type="button" value="Contact" class="contact__button button" id="submit">
                     </form>
+                    <span id="msg"></span>
                 </div>
             </section>
         </main>
@@ -451,3 +457,6 @@
         <script src="./assets/js/main.js"></script>
     </body>
 </html>
+
+
+
